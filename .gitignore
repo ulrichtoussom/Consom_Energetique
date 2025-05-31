@@ -2,6 +2,7 @@ logs.log
 App/test.py
 Data/consommation_energetique.csv
 Design/__psycache__/*
+Design/__pycache__/design_app.cpython-311.pyc
 env11/*
 free/*
 apps.ipynb

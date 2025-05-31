@@ -272,7 +272,7 @@ elif st.session_state.page == 'machinelearnig':
                         
                 prediction = model.predict([[st.session_state.temperature, st.session_state.humidite, st.session_state.vitesse_vent, st.session_state.nombre_personnes]])
                 part1.markdown(f"""
-                                <div style="text-align: center; font-size: 30px; font-weight: bold; color: #00cc99;">Predict Consommation (kW) :{prediction[0]}</div>
+                                <p class="prediction-card" style ="font-size:24px" > Predict Consommation (kW) :{prediction[0]}</div>
                             """,unsafe_allow_html=True)
         
         st.subheader('Prediction')

@@ -90,7 +90,22 @@ def card_design(title, value):
                     .card:hover {{
                     transform: scale(1.02);
                     }}
-
+                    .prediction-card {{
+                        border-radius: 5px;
+                        text-align: center;
+                        font-weight: bold;
+                        color: red;
+                        height: 80px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        shadow: 0 6px 10px rgba(17, 153, 6, 0.1);
+                        border: 1px solid green;
+                    }}
+                    .prediction-card:hover {{
+                        transform: scale(1.02);
+                        border: 3px solid green;
+                    }}
                     .card-content {{
                     padding: 15px;
                     }}
