@@ -32,10 +32,10 @@ def filedownload(df):
     href = f'<a href="data:file/csv;base64,{b64}" download="diabete_predictions.csv">Download CSV File</a>'
     return href
 
-data = load_data("../Data/data_cleaned.csv")
+data = load_data("./Data/data_cleaned.csv")
 
 
-st.sidebar.image("../images/images.jpeg",use_container_width=True)  
+st.sidebar.image("./images/images.jpeg",use_container_width=True)  
 with st.sidebar :
     page= {
         '🏠 Home':'home',
@@ -61,7 +61,7 @@ if st.session_state.page == 'home':
     
     left, middle, right = st.columns((2,6,2))
     with middle :
-        st.image("../images/logo.jpg",use_container_width=True)
+        st.image("./images/logo.jpg",use_container_width=True)
         st.subheader('Description')
         st.write(description(),unsafe_allow_html=True)  
         
@@ -196,7 +196,7 @@ elif st.session_state.page == 'machinelearnig':
     st.subheader("Machine Learnig")
     
     tab1, tab2, tab3 = st.tabs([":clipboard: Data", ":bar_chart: visualisation", ":mask: :smile: Prediction"])
-    model = pickle.load(open('../model_svm.pkl','rb'))
+    model = pickle.load(open('./model_svm.pkl','rb'))
     newdata = data.drop(["consommation (kW)"],axis=1)
     predictions = model.predict(newdata)
     predict_data = pd.DataFrame(predictions,columns=["Prediction (kW)"])
