@@ -1,0 +1,13 @@
+logs.log
+App/test.py
+Data/consommation_energetique.csv
+Design/__psycache__/*
+env11/*
+free/*
+apps.ipynb
+index.html
+learn.txt
+pycaret_obs.ipynb
+style_css_streamlit.css
+svm_Toussom.ipynb
+Toussom_decision_Tree.ipynb
